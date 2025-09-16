@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <h1>📝 To-Do App</h1>
+            <div class="theme-toggle">
+                <button id="themeBtn">🌙</button>
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Форма добавления задач -->
+            <form id="addForm" class="add-form">
+                <div class="input-group">
+                    <input id="title" type="text" placeholder="Новая задача..." required>
+                    <input id="due" type="datetime-local">
+                    <select id="priority">
+                        <option value="low">🟢 Низкий</option>
+                        <option value="medium" selected>🟡 Средний</option>
+                        <option value="high">🔴 Высокий</option>
+                    </select>
+                    <button type="submit">➕ Добавить</button>
+                </div>
+            </form>
+
+            <!-- Фильтры и сортировка -->
+            <div class="controls">
+                <div class="filter-group">
+                    <label for="filter">Фильтр:</label>
+                    <select id="filter">
+                        <option value="all">Все задачи</option>
+                        <option value="active">Активные</option>
+                        <option value="done">Выполненные</option>
+                    </select>
+                </div>
+                <div class="sort-group">
+                    <label for="sort">Сортировка:</label>
+                    <select id="sort">
+                        <option value="createdAt">По дате добавления</option>
+                        <option value="priority">По приоритету</option>
+                        <option value="dueAt">По дедлайну</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Список задач -->
+            <div id="tasksContainer" class="tasks-container">
+                <div id="loading" class="loading">Загрузка...</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

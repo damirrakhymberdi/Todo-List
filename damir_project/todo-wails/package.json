@@ -1,0 +1,22 @@
+{
+    "name": "todo-wails",
+    "version": "1.0.0",
+    "description": "A cross-platform To-Do application built with Wails",
+    "main": "app/main.js",
+    "scripts": {
+        "build": "echo 'Frontend build completed'",
+        "dev": "echo 'Frontend dev server started'"
+    },
+    "dependencies": {
+        "@wails/runtime": "^0.0.1"
+    },
+    "devDependencies": {},
+    "keywords": [
+        "todo",
+        "wails",
+        "desktop",
+        "app"
+    ],
+    "author": "Your Name",
+    "license": "MIT"
+}

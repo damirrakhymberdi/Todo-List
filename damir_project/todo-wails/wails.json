@@ -1,0 +1,22 @@
+{
+    "$schema": "https://wails.io/schemas/config.v2.json",
+    "name": "todo-wails",
+    "outputfilename": "todo-wails",
+    "frontend:install": "npm install",
+    "frontend:build": "npm run build",
+    "frontend:dev:watcher": "npm run dev",
+    "frontend:dev:serverUrl": "auto",
+    "author": {
+        "name": "Your Name",
+        "email": "your.email@example.com"
+    },
+    "info": {
+        "productName": "To-Do App",
+        "productVersion": "1.0.0",
+        "copyright": "Copyright © 2024, Your Name",
+        "comments": "A cross-platform To-Do application built with Wails"
+    },
+    "nsisType": "multiple",
+    "obfuscated": false,
+    "wailsjsdir": "./frontend"
+}
